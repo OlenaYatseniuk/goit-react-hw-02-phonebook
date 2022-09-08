@@ -1,12 +1,12 @@
 import { nanoid } from 'nanoid';
 import React, { Component } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import s from './ContactForm.module.css';
 
 export default class ContactForm extends Component {
-  // static propTypes = {
-  //   prop: PropTypes,
-  // };
+  static propTypes = {
+    onSubmit: PropTypes.func.isRequired,
+  };
 
   state = {
     name: '',
